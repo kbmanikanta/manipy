@@ -16,15 +16,15 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from goedits.views import index 
-# from goedits.views import compare 
-# from goedits.views import pricing 
-# from goedits.views import contact 
+from goedits.views import compare 
+from goedits.views import pricing 
+from goedits.views import contact 
 
 
 urlpatterns = [
 	 url(r'^$', index),
-	 # url(r'^compare/$', compare),
-	 # url(r'^pricing/$', pricing),
-	 # url(r'^contact$', contact),
-     # url(r'^admin', admin.site.urls)
+	 url(r'^compare/$', compare),
+	 url(r'^pricing/$', pricing),
+	 url(r'^contact$', contact),
+     url(r'^admin', admin.site.urls)
 ]

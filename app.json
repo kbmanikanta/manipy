@@ -1,8 +1,8 @@
 {
-  "name": "manipy",
-  "description": "manipy heroku.",
-  "image": "balamanikantak-sailfish/manipy",
-  "repository": "https://github.com/balamanikantak-sailfish/manipy",
+  "name": "Start on Heroku: Python",
+  "description": "",
+  "image": "",
+  "repository": "",
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ]
 }

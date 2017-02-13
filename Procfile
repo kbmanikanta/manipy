@@ -1,1 +1,1 @@
-web: gunicorn goedits.wsgi --log-file -
+web: gunicorn dashboard.wsgi --log-file -

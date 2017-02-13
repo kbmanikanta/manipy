@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -25,7 +25,8 @@ SECRET_KEY = 'l(hb5inu6#(66gv+9*+!g7dj5oi5i+xc_@7oc@fdx44sh#8rqp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -114,16 +115,37 @@ USE_L10N = True
 USE_TZ = True
 
 
-
+#heroku Deployment
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
+# https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-  os.path.join(SITE_ROOT, 'static/'),
+    os.path.join(PROJECT_ROOT, 'static'),
 )
-STATICFILES_FINDERS = (
-  'django.contrib.staticfiles.finders.FileSystemFinder',
-  'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+#-------------------------------------------------------------------#
+#localhost
+# # Static files (CSS, JavaScript, Images)
+# # https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+# SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+  # os.path.join(SITE_ROOT, 'static/'),
+# )
+# STATICFILES_FINDERS = (
+  # 'django.contrib.staticfiles.finders.FileSystemFinder',
+  # 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# )

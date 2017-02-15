@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
+	'sendgrid'
 ]
 
 MIDDLEWARE = [
@@ -99,6 +100,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# send grid
+# please replace "<sendgrid_username>" and "<sendgrid_password>" with your SendGrid credentials
+SENDGRID_USERNAME = 'kbmanikanta90';
+SENDGRID_PASSWORD = 'bala13422';
+
 
 
 # Internationalization

@@ -19,12 +19,13 @@ from goedits.views import index
 from goedits.views import compare 
 from goedits.views import pricing 
 from goedits.views import contact 
-
+from goedits.views import service 
 
 urlpatterns = [
 	 url(r'^$', index),
 	 url(r'^compare/$', compare),
 	 url(r'^pricing/$', pricing),
-	 url(r'^contact$', contact),
+	 url(r'^contact/$', contact),
+	 url(r'^service$', service),
      url(r'^admin', admin.site.urls)
 ]

@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'goedits'
+    'goedits',
+	'goadmin'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -109,6 +110,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+# send grid
+# please replace "<sendgrid_username>" and "<sendgrid_password>" with your SendGrid credentials
+SENDGRID_USERNAME = 'kbmanikanta90';
+SENDGRID_PASSWORD = 'bala13422';
+
 
 
 # Update database configuration with $DATABASE_URL.

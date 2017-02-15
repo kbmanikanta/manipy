@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GoEdits.com</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load staticfiles%}
+<link rel='shortcut icon' href='{% static "img/logo/GoEdits.ico" %}' type="image/x-icon"/>
+<meta  name="description" content="GoEdits.com" />
+<meta name="description" content="Stun your photos to win your mottos." />
+<meta name="keywords" content="Go,GoEdits,Go Edits,go,goedits,go edits,edit,photograph,realestates,houses,interior,designs,buildings,builders,agents,goedits.com,goedit.com" />
+
+<script type="text/javascript" src="{% static "js/jquery-1.9.1.min.js" %}"></script>
+
+<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+
+<link type="text/css" rel="stylesheet" href="{% static "css/slider.css" %}" />
+
+<script type="text/javascript" src="{% static "js/slider.js" %}"></script>
+
+<link type="text/css" rel="stylesheet" href="{% static "css/pagestyle.css" %}" />
+
+<link href="{% static "css/bootsnav.css" %}" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+
+<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+<link type="text/css" rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+
+
+
+<script type="text/javascript">
+		jQuery(document).ready(
+			function() {
+				var slider = new XPRO.Controls.Slider(null);
+				slider.initSlider("scroller", {
+						"mode"              : "slideOut",
+						"dir"               : "left",
+						"iniWidth"          : 700,
+						"iniHeight"         : 350,
+						"autoRun"           : false,
+						"autoHeightMode"    : "fitcontent",
+						"thumbnails"        : {"navigation": false,
+											   "location" : "top"},
+						"enableNavigation"  : false                   
+				});
+			}
+		);
+</script>
+	<style>
+		
+		.xpro-content-panel {
+			border-radius: 10px;
+			background-color: #ffffff; /*#f4f4f4 !important; */
+			border: none; /*#e4e4e4 1px solid;*/
+		}
+				  
+	</style>
+	<style type="text/css">
+	nav.navbar.bootsnav ul.nav > li > a
+	{
+	   color : black;
+	}
+	nav.navbar.bootsnav ul.nav > li > a:hover
+	{
+	   color : black;
+	   background-color:Gold !important;
+	}
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="page-loader" style="display: none;">
+  <div class="loader"> <span class="dot dot_1"></span> <span class="dot dot_2"></span> <span class="dot dot_3"></span> <span class="dot dot_4"></span> </div>
+</div>
+<!-- Navigation Section -->
+
+<nav class="navbar navbar-default navbar-fixed white bootsnav">
+  <div class="container"> 
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
+ <a class="navbar-brand" href="#brand"><img src="{% static "img/logo/mlogo.png" %}" class="logo" alt="" style="width:120px;height:65px;"> </a> </div>
+    <!-- End Header Navigation --> 
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+        <li><a href="/">Home</a></li>
+        <li><a href="/service">How It Works</a></li>
+        <li><a href="/compare">Difference</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+	    <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+<section id="service" style="">
+        <div class="container">
+		    <div class="row">
+			  <div class="area-heading area-heading-style-two text-center">
+				<h2 class="area-title" style="font-family: 'Oswald', sans-serif;">How it Works</h2>
+				<p> The real conversion of the standard images to a commercial view.</p>
+			  </div>
+			</div>
+            <div class="xpro-content-panel">
+            <div class="row" style="margin:15px 0px 15px 0px">
+                <div class="col-lg-12">
+                    <div class="xpro-slider-container">
+                        <div id="scroller" class="xpro-slider" style="">
+                            <div class="xpro-slider-content">
+                                <div class="xpro-slider-item" style="background-color:#ffffff;">
+                                    <div style="margin:5px 15px 5px 15px">
+                                        <h1 style="font-family: 'Oswald', sans-serif;">Scheduling</h1>                                        
+                                        <p style="text-align: justify;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing aliquet risus. Pellentesque quis ante purus. Sed tempor purus ut iaculis cursus. Fusce arcu mi, blandit eu laoreet ut, sodales vitae urna. Pellentesque sodales nec ipsum vel mollis. Morbi vitae nibh consequat, commodo turpis in, iaculis ipsum. Ut in posuere ipsum. Nunc feugiat lectus quis lacus porttitor, vitae aliquet tortor molestie. Cras nec ligula sit amet turpis commodo aliquam. Curabitur sed neque eu lectus euismod tempus tempor sed mauris. Integer ornare eu justo ac pharetraery continuous slide item
+                                        </p>  
+                                    </div>
+                                    <div class="xpro-thumb-item"><i class="fa fa-calendar fa-4x"></i><p>Scheduling</p></div>
+                                </div>
+                                <div class="xpro-slider-item" style="background-color:#ffffff;">
+                                    <div style="margin:5px 15px 5px 15px">
+                                        <h1 style="font-family: 'Oswald', sans-serif;">Editing</h1>                                        
+                                        <p style="text-align: justify;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing aliquet risus. Pellentesque quis ante purus. Sed tempor purus ut iaculis cursus. Fusce arcu mi, blandit eu laoreet ut, sodales vitae urna. Pellentesque sodales nec ipsum vel mollis. Morbi vitae nibh consequat, commodo turpis in, iaculis ipsum. Ut in posuere ipsum. Nunc feugiat lectus quis lacus porttitor, vitae aliquet tortor molestie. Cras nec ligula sit amet turpis commodo aliquam. Curabitur sed neque eu lectus euismod tempus tempor sed mauris. Integer ornare eu justo ac pharetraery continuous slide item
+                                        </p>                     
+                                    <div class="xpro-thumb-item"><i class="fa fa-edit fa-4x"></i><p>Editing</p></div>
+                                </div>
+								</div>
+                                <div class="xpro-slider-item" style="background-color:#ffffff;">
+                                    <div style="margin:5px 15px 5px 15px">
+                                        <h1 style="font-family: 'Oswald', sans-serif;">Delivery</h1>
+                                        <p style="text-align: justify;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing aliquet risus. Pellentesque quis ante purus. Sed tempor purus ut iaculis cursus. Fusce arcu mi, blandit eu laoreet ut, sodales vitae urna. Pellentesque sodales nec ipsum vel mollis. Morbi vitae nibh consequat, commodo turpis in, iaculis ipsum. Ut in posuere ipsum. Nunc feugiat lectus quis lacus porttitor, vitae aliquet tortor molestie. Cras nec ligula sit amet turpis commodo aliquam. Curabitur sed neque eu lectus euismod tempus tempor sed mauris. Integer ornare eu justo ac pharetraery continuous slide item
+                                        </p>   
+                                    </div>
+                                    <div class="xpro-thumb-item"><i class="fa fa-cloud-upload fa-4x"></i><p>Delivery</p></div>
+                                </div>
+                                <div class="xpro-slider-item" style="background-color:#ffffff;">
+                                    <h1 style="font-family: 'Oswald', sans-serif;">Revisions</h1> 
+                                    <p style="text-align: justify;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing aliquet risus. Pellentesque quis ante purus. Sed tempor purus ut iaculis cursus. Fusce arcu mi, blandit eu laoreet ut, sodales vitae urna. Pellentesque sodales nec ipsum vel mollis. Morbi vitae nibh consequat, commodo turpis in, iaculis ipsum. Ut in posuere ipsum. Nunc feugiat lectus quis lacus porttitor, vitae aliquet tortor molestie. Cras nec ligula sit amet turpis commodo aliquam. Curabitur sed neque eu lectus euismod tempus tempor sed mauris. Integer ornare eu justo ac pharetraery continuous slide item
+                                     </p>   
+                                    <div class="xpro-thumb-item"><img src="{% static "img/shoot/eye.png" %}" style="width:60px;height:56px;" /><p>Revisions</p></div>                                
+                                </div>
+								<div class="xpro-slider-item" style="background-color:#ffffff;">
+                                    <h1 style="font-family: 'Oswald', sans-serif;">Security</h1> 
+                                    <p style="text-align: justify;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing aliquet risus. Pellentesque quis ante purus. Sed tempor purus ut iaculis cursus. Fusce arcu mi, blandit eu laoreet ut, sodales vitae urna. Pellentesque sodales nec ipsum vel mollis. Morbi vitae nibh consequat, commodo turpis in, iaculis ipsum. Ut in posuere ipsum. Nunc feugiat lectus quis lacus porttitor, vitae aliquet tortor molestie. Cras nec ligula sit amet turpis commodo aliquam. Curabitur sed neque eu lectus euismod tempus tempor sed mauris. Integer ornare eu justo ac pharetraery continuous slide item
+                                     </p>   
+                                    <div class="xpro-thumb-item"><i class="fa fa-unlock-alt fa-4x"></i><p>Security</p></div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end of row-->
+            </div>
+        </div> <!--end of container-->
+		</div> 
+		</section>
+		  <!-- Footer Section -->
+  <footer class="footer" >
+    <div class="footer-widget-section text-center" style="background-color:gray;">
+        <div class="container">
+            <div class="social-links">
+              <ul class="list-inline">
+                <li><a href="https://www.twitter.com/goedits"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/goedits"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://www.facebook.com/goedits"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="https://in.pinterest.com/goedits"><i class="fa fa-pinterest-square"></i></a></li>
+                <li><a href="https://www.instagram.com/goedits"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div><!-- /.social-links -->
+        </div>
+    </div><!-- /.footer-widget-section -->
+
+    <div class="copyright-section text-center">
+        <div class="container">
+            <div class="copytext">
+                <a href="http://www.goedits.com"><img src="{% static "img/logo/copyrightlogo.png" %}" alt="GoEdits" style="width:80px;height:40px;" /></a><p style="color:white;">2017-2018 © GoEdits.com</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+    </body>
+</html>
